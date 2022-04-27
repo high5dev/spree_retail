@@ -1,0 +1,446 @@
+/* DEFAULTS */
+*
+{
+    margin: 0;
+    padding: 0;
+
+}
+
+a:hover
+{
+    color: unset;
+    text-decoration: none;
+}
+
+p{
+    margin-bottom: 0 !important;
+
+}
+.productD-p{
+    padding-right: 10px;
+}
+hr
+{
+    margin: 5px 0px !important;
+}
+
+h4
+{
+
+    margin-bottom: 0px !important;
+}
+
+h2
+{
+
+    padding-top:30px;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.arrowPdBtn{
+    margin-top: 120px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: #004DD9;
+    color: white;
+  }
+  .arrowPdLBtn{
+    margin-top: 120px;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: #004DD9;
+    color: white;
+  }
+  .arrowPdLBtn p{
+
+    font-size: 20px;
+    text-align: center;
+  }
+  .arrowPdBtn p{
+
+    font-size: 20px;
+    text-align: center;
+  }
+
+.colorPick {
+    margin-bottom: 8px;
+
+}
+
+.heading h2 span
+{
+    font-weight: 500;
+}
+.text-bold
+{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pro_detail
+{
+    justify-content: center;
+    max-width: 1366px;
+    margin: 0px 275px;
+}
+.descriptionBtn span{
+
+    font-size: 15px;
+    color: rgba(41, 39, 39, 0.829);
+    transform: rotate(90deg);
+}
+
+.descriptionBtn:focus{
+   outline: none;
+}
+.descriptionBtn{
+border: none;
+text-align: left;
+padding-bottom: 5px;
+border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+background-color: white;
+color: black;
+margin-bottom: 15px;
+width: 300px;
+
+}
+.detailRow
+{
+    padding-left:35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.dropDownBtn:focus{
+    outline: none;
+}
+
+.dropDownBtn span{
+
+    font-size: 15px;
+    color: rgba(41, 39, 39, 0.829);
+    transform: rotate(90deg);
+}
+
+.dropDownBtn{
+border: none;
+text-align: left;
+padding-bottom: 5px;
+border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+background-color: white;
+color: black;
+margin-bottom: 15px;
+width: 1100px;
+}
+.reviewContainer{
+    background-color: whitesmoke;
+    width: 950px;
+    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+
+}
+.reviewContainer ul li{
+
+  padding-left: 80px;
+
+}
+.writeReviewBtn{
+
+    border: none;
+    background-color: rgba(39, 38, 38, 0.658);
+    color: white;
+    height: 45px;
+    width: 100px;
+
+}
+.specification2{
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.specification2 ul li{
+
+    list-style: none;
+    display: inline-block;
+
+}
+.specifications{
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+.specification ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+.specification2 ul{
+
+    width: 100%;
+}
+.review{
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+.itemDescription{
+    margin-bottom: 20px;
+    margin-left: 70px;
+}
+
+
+.detailRow .pro_col1
+{
+    width: 45%;
+    margin-top: 20px;
+}
+
+.detailRow .pro_col2
+{
+    width: 53%;
+}
+.top{
+    padding-left: 45px;
+}
+.top_icons i
+{
+    margin-right: 18px;
+    cursor: pointer;
+
+}
+
+.top_links a p
+{
+    color: #555;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.sImg
+{
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+}
+
+.sImg img
+{
+
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+main{
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.mainImg
+{
+    margin-left: 15px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainImg img
+{
+    width: 90%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.under_btn
+{
+    background-color: grey;
+    border: 1px solid #000000;
+    padding: 0px 10px;
+    margin: 5px 0px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.underline
+{
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.heading
+{
+    font-weight: bold;
+    margin: 5px 0px;
+    display: block;
+}
+
+.price
+{
+
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.stars
+{
+    display: flex;
+    align-items: center;
+}
+
+.stars i{
+    font-size: 12px;
+}
+
+.qty
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.sQty
+{
+    height: 50px;
+    width: 70px;
+    border: 1px solid rgba(128, 128, 128, 0.438);
+    padding: 2px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+.qtySection
+{
+    display: flex;
+    align-items: center;
+}
+
+.cart_btn
+{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-decoration: none !important;
+    display: block;
+    padding: 6px 25px;
+    text-align: center;
+    background: #0270DA;
+    color: #ffffff !important;
+    margin: 20px 0px 0px 0px;
+}
+
+.delivery
+{
+
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.seller
+{
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+.delivery p,
+.seller p{
+    font-size: 14px;
+    color: #111;
+    font-weight: 500;
+}
+
+
+.active
+{
+  border-bottom: 3px solid #BF338C;
+}
+
+
+/* reponsive css */
+@media only screen and (max-width:950px)
+{
+    .pro_detail
+    {
+        padding: 50px;
+        padding-bottom: 100px;
+    }
+
+    .detailRow .pro_col1
+    {
+        width: 100% !important;
+    }
+
+    .detailRow .pro_col2
+    {
+        width: 100% !important;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:550px)
+{
+    .pro_detail
+    {
+        padding: 20px 20px 50px 20px;
+    }
+
+}
+
+.aboutItem
+{
+    width: 75%;
+}
+
+.aboutItem p
+{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.aBold
+{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.block
+{
+    display: block;
+}
+
+table {
+    border-collapse: separate;
+    width: 75%;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 8px;
+    min-width: 200px;
+  }
+
+    tr:nth-child(odd){
+        background-color: #F4F4F5;
+    }
+
+  .aboutItem ul li
+  {
+      font-size: 14px;
+      font-weight: 500;
+      margin-left: 25px;
+  }
+
+  .aboutItem h2
+  {
+      font-weight: 500;
+  }

@@ -1,0 +1,2 @@
+Code: 142
+There was a missing parameter during stripe payment.

@@ -1,0 +1,32 @@
+{
+	"info": {
+		"_postman_id": "cf98ada8-9a8b-4dee-b19f-5bca3cfd484b",
+		"name": "Products",
+		"description": "Enter description about your API here\n\nContact Support:\n Name: Your name",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get a product",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": "http://127.0.0.1:8000/api/v1/product/2000001"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:3000/api",
+			"type": "string"
+		}
+	]
+}

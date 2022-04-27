@@ -1,0 +1,307 @@
+{
+	"info": {
+		"_postman_id": "efc46443-e261-4e20-a5f6-f9f1392ebfd4",
+		"name": "Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login?email=bilalaijaz.88@gmail.com&password=11223344&device_name=OPPO",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "bilalaijaz.88@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "11223344"
+						},
+						{
+							"key": "device_name",
+							"value": "OPPO"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login Successfully",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login?email=user@gmail.com&password=11223344",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "user@gmail.com"
+								},
+								{
+									"key": "password",
+									"value": "11223344"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 May 2021 15:21:17 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 May 2021 15:21:17 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"11|4UGkaydISPKP4QX0ENmVUCUmYINJSrDYYrqIZvgR\",\n    \"token_type\": \"Bearer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register?first_name=John&last_name=Doe&email=user@gmail.com&password=11223344&password_confirmation=11223344&tas=1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "first_name",
+							"value": "John",
+							"description": "First Name"
+						},
+						{
+							"key": "last_name",
+							"value": "Doe",
+							"description": "Last Name"
+						},
+						{
+							"key": "email",
+							"value": "user@gmail.com",
+							"description": "Email"
+						},
+						{
+							"key": "password",
+							"value": "11223344",
+							"description": "Password"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "11223344",
+							"description": "Confirm Passowrd"
+						},
+						{
+							"key": "tas",
+							"value": "1",
+							"description": "Term of service in 0 or 1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Registered Successfully",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register?first_name=John&last_name=Doe&email=user@gmail.com&password=11223344&password_confirmation=11223344&tas=1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							],
+							"query": [
+								{
+									"key": "first_name",
+									"value": "John",
+									"description": "First Name"
+								},
+								{
+									"key": "last_name",
+									"value": "Doe",
+									"description": "Last Name"
+								},
+								{
+									"key": "email",
+									"value": "user@gmail.com",
+									"description": "Email"
+								},
+								{
+									"key": "password",
+									"value": "11223344",
+									"description": "Password"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "11223344",
+									"description": "Confirm Passowrd"
+								},
+								{
+									"key": "tas",
+									"value": "1",
+									"description": "Term of service in 0 or 1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 May 2021 15:20:44 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 21 May 2021 15:20:44 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/7.3.27"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Registered Successfully\",\n    \"access_token\": \"9|3NvP96aekjRgsB7dVLsJ66WZRBFgDtamzLZ0pReV\",\n    \"token_type\": \"Bearer\"\n}"
+				}
+			]
+		}
+	]
+}

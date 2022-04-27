@@ -1,0 +1,351 @@
+.job
+{
+    padding: 50px 30px;
+    max-width: 1100px;
+    margin: 0px auto;
+    border-left: 1px solid #202020;
+    border-right: 1px solid #202020;
+}
+
+.job .Searchinput,
+.job .Searchinput > div,
+.job .Searchinput input,
+.job .has-search
+{
+    min-width: 300px !important;
+}
+
+.job .has-search input
+{
+    border-radius: 50px !important;
+    padding: 18px 30px;
+}
+
+.job .has-search
+{
+    margin-top: 15px;
+}
+
+/* .job .has-search span
+{
+  margin: 0px 20px;
+} */
+
+.jobList
+{
+    padding-left: 20px !important;
+}
+
+.jobContent
+{
+    margin-top: 25px;
+}
+
+.jobContent .blue
+{
+    color: black;
+    margin-bottom: 0px;
+    font-size: 16px;
+}
+
+.jobContent .light
+{
+    font-size: 12px;
+}
+
+.jobList .row
+{
+    margin-top: 10px !important;
+}
+
+.sub_head
+{
+    font-size: 20px;
+}
+
+.jobContent .cleartxt
+{
+  color: #0078F2;
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+}
+
+.job .heading
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.clearBtn
+{
+  width: 80% !important;
+}
+
+#accordion
+{
+    margin-top: 20px;
+}
+
+#accordion h3
+{
+    /* background: #202020; */
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+ .ui-icon, .ui-widget-content .ui-icon {
+    margin-right: 10px;
+
+}
+/*
+.ui-state-active .ui-icon, .ui-button:active .ui-icon {
+    filter: invert(-2);
+} */
+
+.ui-accordion .ui-accordion-content
+{
+    background: transparent;
+    border: none;
+    color: black;
+    height: unset !important;
+    padding-top: 0px !important;
+}
+
+
+/*
+=====
+CORE STYLES
+=====
+*/
+
+.toggle{
+    --uiToggleSize: var(--toggleSize, 1.1rem);
+    --uiToggleBorderWidth: var(--toggleBorderWidth, 1px);
+    --uiToggleColor: var(--toggleColor, black);
+
+    display: var(--toggleDisplay, inline-flex);
+    margin-right: 15px;
+  }
+
+  .toggle__input{
+    /*
+    The pattern by Sara Soueidan https://www.sarasoueidan.com/blog/inclusively-hiding-and-styling-checkboxes-and-radio-buttons/
+    */
+    width: var(--uiToggleSize);
+    height: var(--uiToggleSize);
+    opacity: 0;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+
+  /*
+  1. Calculation of the gap for the custom checkbox
+  */
+
+  .toggle__label{
+    display: inline-flex;
+    min-height: var(--uiToggleSize);
+    padding-left: calc(var(--uiToggleSize) + var(--toggleIndent, .4em));
+  }
+
+  .toggle__input:not(:disabled) ~ .toggle__label{
+    cursor: pointer;
+  }
+
+  /*
+  1. Ems helps to calculate size of the checkbox
+  */
+
+  .toggle__label::after{
+    content: "";
+    box-sizing: border-box;
+    width: 1em;
+    height: 1em;
+    font-size: var(--uiToggleSize); /* 1 */
+
+    background-color: transparent;
+    border: var(--uiToggleBorderWidth) solid var(--uiToggleColor);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+  }
+
+  .toggle__input:checked ~ .toggle__label::after{
+    background-color: var(--uiToggleColor);
+  }
+
+  .toggle__text{
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  /*
+  The arrow size and position depends from sizes of square because I needed an arrow correct positioning from the top left corner of the element toggle
+
+  1. Ems helps to calculate size and position of the arrow
+  */
+
+  .toggle__label::before{
+    content: "";
+    width: 0;
+    height: 0;
+    font-size: var(--uiToggleSize); /* 1 */
+
+    border-left-width: 0;
+    border-bottom-width: 0;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-color: var(--toggleArrowColor, #000);
+
+    position: absolute;
+    top: .5428em;
+    left: 2px;
+    z-index: 3;
+
+    transform-origin: left top;
+    transform: rotate(-40deg) skew(10deg);
+  }
+
+  .toggle__input:checked ~ .toggle__label::before{
+    --uiToggleArrowWidth: var(--toggleArrowWidth, 2px);
+
+    width: .6em;
+    height: .3em;
+    border-left-width: var(--uiToggleArrowWidth);
+    border-bottom-width: var(--uiToggleArrowWidth);
+  }
+
+
+  /*
+  The demo skin
+  */
+
+  .toggle__label::after{
+    border-radius: var(--toggleBorderRadius, 2px);
+  }
+
+  /*
+  The animation of switching states
+  */
+
+  .toggle__input:not(:disabled) ~ .toggle__label::before{
+    will-change: width, height;
+    opacity: 0;
+  }
+
+  .toggle__input:not(:disabled):checked ~ .toggle__label::before{
+    opacity: 1;
+    transition: opacity .1s ease-out .25s, width .1s ease-out .5s, height .2s ease-out .3s;
+  }
+
+  .toggle__input:not(:disabled) ~ .toggle__label::after{
+    will-change: background-color;
+    transition: background-color .2s ease-out;
+  }
+
+  /*
+  =====
+  SETTINGS
+  =====
+  */
+
+  .page__custom-settings{
+    --toggleColor: #690e90;
+    --toggleOutlineColorFocus: #690e90;
+    --toggleSize: 2rem;
+  }
+
+  /* accordion css */
+
+
+  .accordion {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+
+  .accordion-header,
+  .accordion-body {
+    background: white;
+  }
+
+  .accordion-header {
+    color: black;
+    cursor: pointer;
+    font-size: 1em;
+    letter-spacing: .1em;
+    transition: all .3s;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    background: transparent;
+  }
+
+
+  .accordion__item .accordion__item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .accordion-header:hover {
+    position: relative;
+    z-index: 5;
+  }
+
+  .accordion-body {
+    background: #fcfcfc;
+    color: #353535;
+    display: none;
+  }
+
+  .accordion-body__contents {
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    background: white !important;
+    color: black;
+  }
+
+
+  .accordion__item.active:last-child .accordion-header {
+    border-radius: none;
+  }
+
+  .accordion:first-child > .accordion__item > .accordion-header {
+    border-bottom: 1px solid transparent;
+  }
+
+  .accordion__item > .accordion-header:after {
+    content: "›";
+    font-size: 2em;
+    transition: .3s all;
+    transform: rotate(0deg);
+    margin-right: 10px;
+    margin-bottom: 6px;
+  }
+
+  .accordion__item.active > .accordion-header:after {
+    transform: rotate(-270deg);
+    margin-bottom: 0px;
+  }
+
+
+
+  .accordion__item .accordion__item .accordion-header {
+    background: #f1f1f1;
+    color: #353535;
+  }

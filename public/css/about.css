@@ -1,0 +1,104 @@
+/* DEFAULTS */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body
+{
+    background: #F0F0F0;
+}
+
+p{
+    margin-bottom: 0 !important;
+}
+
+hr
+{
+    margin: 5px 0px !important;
+}
+
+h4
+{
+    margin-bottom: 0px !important;
+}
+
+.heading
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.heading h2
+{
+    border-bottom: 5px solid #004DD9;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.wrapper
+{
+    padding: 50px 160px;
+}
+
+.aboutBanner
+{
+    background: url(../images/about.jpg);
+    height: 65vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+}
+
+.wrapper p
+{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.blue
+{
+   font-weight: 600;
+   font-size: 18px;
+}
+
+.ab_p
+{
+    display: block;
+    max-width: 500px;
+    margin-top: 20px;
+}
+
+.aboutBanner button
+{
+    width: fit-content;
+    border: none;
+    outline: none;
+    border: 2px solid #ffff;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    padding: 12px 30px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: .4s ease all;
+}
+
+.aboutBanner button:hover
+{
+    background: #fff;
+    color: #004DD9;
+}
+
+.aboutBanner h3
+{
+    font-size: 30px;
+}

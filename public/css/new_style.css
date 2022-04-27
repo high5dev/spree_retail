@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+}
+.p-text{
+    font-size: 22px;
+    color: white;
+    margin-left: 20px;
+}
+.footer-link{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 22px;
+}
+.nav-link{
+    font-size: 20px;
+    color: white;
+    margin-left: 17px;
+    font-family: Lato, sans-serif;
+}
+.navbar-brand{
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+}
+a:hover{
+    color: #007bff;
+}
+.fa{
+    font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+    .p-text{
+        font-size: 15px;
+        color: white;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+    .banner{
+        width: 100%;
+        height: 200px;
+    }
+    .container-fluid{
+        width: 95%;
+    }
+    .links{
+        margin-bottom: 0px !important;
+    }
+    .link-r{
+        margin-top: 15px !important;
+    }
+    .icons{
+        padding-left: 0px !important;
+        margin-left: 0px !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .banner{
+        width: 100%;
+        height: 300px;
+    }
+    .container-fluid{
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}

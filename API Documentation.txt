@@ -1,0 +1,24 @@
+1- Login (To get user berear token for authorization)
+
+Request= POST
+URL = /api/login
+Params=
+email: Valid User Email
+password: Valid Passowrd
+device_name: User's device name (e.g. Iphone)
+
+
+2- Profile (To get user basic info)
+
+Request= GET
+URL = /api/profile
+Params= NONE
+Returns=
+{
+    "id": 1000001,
+    "first_name": "Bilal",
+    "last_name": "Aijaz",
+    "email": "bilalaijaz.88@gmail.com"
+}
+
+3-

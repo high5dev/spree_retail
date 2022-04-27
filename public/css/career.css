@@ -1,0 +1,108 @@
+
+.career_bannner
+{
+    background-image: url(../images/career.png);
+    height: 60vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: #fff;
+}
+
+.wrapper
+{
+    max-width: 1366px;
+    margin: 0px auto;
+}
+
+.careerInput,
+.careerBtn
+{
+    padding: 10px;
+    width: 280px;
+    outline: none;
+    border: none;
+}
+
+.careerBtn
+{
+    width: 100px;
+    background: #004DD9;
+    color: #fff;
+    outline: none;
+}
+
+.whyRow
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 40px;
+    overflow-y: hidden !important;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px !important;
+}
+
+.heading
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.bold
+{
+    font-size: 20px;
+}
+
+@media only screen and (max-width:600px)
+{
+    .career_bannner
+    {
+        padding-left: 20px;
+    }
+    .careerInput
+    {
+        width: 200px;
+    }
+    .careerBtn
+    {
+        width: unset;
+    }
+    .whyRow
+    {
+        padding: 20px;
+    }
+
+}
+
+.rowImg img
+{
+    object-position: top;
+}
+
+.desc
+{
+    background: #004DD9 !important;
+    color: #fff !important;
+}
+
+.desc h4
+{
+    color: #fff !important;
+    font-size: 35px;
+
+}
+
+.desc a
+{
+    color: #fff !important;
+}
+
+.career .col-md-6,
+.career .col-sm-6
+{
+    padding: 0px;
+}
